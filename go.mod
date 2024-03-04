@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/go-resty/resty/v2 v2.11.0
 	github.com/joho/godotenv v1.5.1
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	github.com/tjarratt/babble v0.0.0-20210505082055-cbca2a4833c1
 )
 

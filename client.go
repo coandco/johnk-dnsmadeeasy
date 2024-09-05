@@ -182,6 +182,7 @@ func (c *Client) EnumerateDomains() (map[string]int, error) {
 
 	for _, domain := range respDomains.Domains {
 		domains[domain.Name] = domain.ID
+		domains[domain.Name + "."] = domain.ID
 	}
 
 	return domains, nil

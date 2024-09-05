@@ -36,7 +36,7 @@ type Client struct {
 
 // Construct a client using the supplied values
 func GetClient(APIKey string, SecretKey string, url BaseURL) *Client {
-	r := resty.New().SetBaseURL(string(url))
+	r := resty.New().SetBaseURL(string(url)).SetDebug(true)
 	return &Client{APIKey, SecretKey, url, r, nil}
 }
 
